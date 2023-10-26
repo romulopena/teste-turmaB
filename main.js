@@ -3,6 +3,6 @@ function tocaSomAplausos(){
 }
 document.querySelector('.tecla_aplausos').onclick = tocaSomAplausos;
 
-const listaDeTeclas = querySelectorAll(".tecla");
+const listaDeTeclas = document.querySelectorAll(".tecla");
 listaDeTeclas[0].onclick = tocaSomAplausos;
 
