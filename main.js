@@ -14,8 +14,8 @@ for(let contador = 0;contador < listaDeTeclas.length;contador++){
     }
     //linhas 15 a 24 = criação de evento de teclas de execução para efeito pressionar tecla
     tecla.onkeydown = function(evento){
-        console.log(evento.code === 'Space') 
-        if(evento.code === 'Space'){
+        
+        if(evento.code === 'Space' || evento.code === 'Enter'){
         tecla.classList.add('ativa');
     }
 }
