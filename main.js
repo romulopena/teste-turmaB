@@ -13,8 +13,9 @@ for(let contador = 0;contador < listaDeTeclas.length;contador++){
         tocaSom(idAudio);
     }
     //linhas 15 a 24 = criação de evento de teclas de execução para efeito pressionar tecla
-    tecla.onkeydown = function(evento){ 
-        if(evento.code != 'Tab'){
+    tecla.onkeydown = function(evento){
+        console.log(evento.code === 'Space') 
+        if(evento.code === 'Space'){
         tecla.classList.add('ativa');
     }
 }
